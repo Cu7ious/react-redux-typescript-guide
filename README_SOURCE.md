@@ -43,32 +43,31 @@ This gives you the power to prioritize our work and support the project contribu
 ---
 
 ## Table of Contents
-- [Type Definitions & Complementary Libraries](#type-definitions--complementary-libraries)
-- [React Types Cheatsheet](#react-types-cheatsheet) 🌟 __NEW__
-- [Component Typing Patterns](#component-typing-patterns)
+- [Introduction](#introduction)
+- [React - Type-Definitions Cheatsheet](#react---type-definitions-cheatsheet)
+- [React - Typing Patterns](#react---typing-patterns)
   - [Function Components - FC](#function-components---fc)
-  - [Class Components ](#class-components) 📝 __UPDATED__
+  - [Class Components ](#class-components)
   - [Generic Components](#generic-components)
-  - [Render Props](#render-props) 🌟 __NEW__
-  - [Higher-Order Components](#higher-order-components) 📝 __UPDATED__
+  - [Render Props](#render-props)
+  - [Higher-Order Components](#higher-order-components)
   - [Redux Connected Components](#redux-connected-components)
-  - [Context](#context)
-  - [Hooks](#hooks)
-- [Redux](#redux)
-  - [Action Creators](#action-creators) 📝 __UPDATED__
-  - [Reducers](#reducers) 📝 __UPDATED__
+  - [Context](#context) 🌟 __NEW__
+  - [Hooks](#hooks) 🌟 __NEW__
+- [Redux - Typing Patterns](#redux---typing-patterns)
+  - [Action Creators](#action-creators)
+  - [Reducers](#reducers)
     - [State with Type-level Immutability](#state-with-type-level-immutability)
     - [Typing reducer](#typing-reducer)
     - [Testing reducer](#testing-reducer)
-  - [Store Configuration](#store-configuration) 📝 __UPDATED__
-  - [Async Flow](#async-flow) 📝 __UPDATED__
+  - [Store Configuration](#store-configuration)
+  - [Async Flow](#async-flow)
   - [Selectors](#selectors)
-  - [Typing connect](#typing-connect) 🌟 __NEW__
+  - [Typing connect](#typing-connect)
 - [Tools](#tools)
   - [TSLint](#tslint)
   - [Jest](#jest)
-  - [Enzyme](#enzyme)
-  - [Living Style Guide](#living-style-guide) 🌟 __NEW__
+  - [Living Style Guide](#living-style-guide)
   - [Common Npm Scripts](#common-npm-scripts)
 - [Recipes](#recipes)
   - [Baseline tsconfig.json](#baseline-tsconfigjson)
@@ -81,9 +80,9 @@ This gives you the power to prioritize our work and support the project contribu
 
 ---
 
-# Type Definitions & Complementary Libraries
+# Introduction
 
-### Type Definitions for React & Redux
+### Type-Definitions for React & Redux
 ```
 npm i -D @types/react @types/react-dom @types/react-redux
 ```
@@ -95,17 +94,17 @@ npm i -D @types/react @types/react-dom @types/react-redux
 
 > *NB: Guide is based on types from Redux v4.x.x (Beta). To make it work with Redux v3.x.x please refer to [this config](https://github.com/piotrwitek/react-redux-typescript-guide/blob/master/playground/tsconfig.json#L5))  
 
-### Complementary Libraries
-> Utility libraries **with focus on type-safety** providing a light functional abstractions for common use-cases
+### Recommended Libraries
+> Utility libraries **with focus on type-safety** providing a clean functional API that help handle common use-cases and reduce boilerplate  
 
-- ["utility-types"](https://github.com/piotrwitek/utility-types) - Utility Types for TypeScript (think lodash for types, moreover provides migration from Flow's Utility Types)  
-- ["typesafe-actions"](https://github.com/piotrwitek/typesafe-actions) - Typesafe Action Creators for Redux / Flux Architectures (in TypeScript)  
+- ["utility-types"](https://github.com/piotrwitek/utility-types) - Utility Types for TypeScript (think `lodash` for types - generic types complementing TypeScript build-in types)  
+- ["typesafe-actions"](https://github.com/piotrwitek/typesafe-actions) - Typesafe generic helpers for Redux / Flux Architectures (in TypeScript)  
 
 [⇧ back to top](#table-of-contents)
 
 ---
 
-# React Types Cheatsheet
+# React - Type-Definitions Cheatsheet
 
 #### `React.FunctionComponent<P>` or `React.FC<P>`
 Type representing a functional component
@@ -173,7 +172,7 @@ const handleChange = (ev: React.MouseEvent<HTMLDivElement>) => { ... }
 
 ---
 
-# Component Typing Patterns
+# React - Typing Patterns
 
 ## Function Components - FC
 
@@ -363,7 +362,7 @@ Hook for state management like Redux in a function component.
 
 ---
 
-# Redux
+# Redux - Typing Patterns
 
 ## Action Creators
 
