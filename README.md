@@ -1,10 +1,10 @@
 ## React & Redux in TypeScript - Static Typing Guide
 
-_"This guide is a **living compendium** documenting the most important patterns and recipes on how to use **React** (and its Ecosystem) in a **functional style with TypeScript** and to make your code **completely type-safe** while focusing on a **conciseness of type annotations** so it's a minimal effort to write and to maintain types in the long run."_
+_"This guide is a **living compendium** documenting the most important patterns and recipes on how to use **React** (and its Ecosystem) in a **functional style** with **TypeScript** and to make your code **completely type-safe** while focusing on **inferring the types from implementation** so it's a minimal effort to write and maintain types in the long run."_
 
 [![Join the chat at https://gitter.im/react-redux-typescript-guide/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/react-redux-typescript-guide/Lobby)  
 
-> #### _Found it useful? Want more updates?_ [**Show your support by giving a :star:**](https://github.com/piotrwitek/react-redux-typescript-patterns/stargazers)  
+> #### _Found it useful? Want more updates?_ [**Show your support by giving a :star:**](https://github.com/piotrwitek/react-redux-typescript-guide/stargazers)  
 
 > _[The Mighty Tutorial](https://github.com/piotrwitek/typesafe-actions#behold-the-mighty-tutorial) for completely typesafe Redux Architecture_ :book:  
 
@@ -29,16 +29,16 @@ You should check out Playground Project located in the `/playground` folder. It 
 > Playground was created in such a way that you can simply clone the repository locally and immediately play around on your own. It will help you to learn all the examples from this guide in a real project environment without the need to create some complicated environment setup by yourself.
 
 ## Contributing Guide
-If you're planning to contribute please make sure to read the contributing guide: [CONTRIBUTING.md](/CONTRIBUTING.md)
+We are open for contributions. If you're planning to contribute please make sure to read the contributing guide: [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Sponsor
-If you like what we're doing here, you can help us by funding the work on specific issues that you choose by using IssueHunt.io!
+This is an independent open-source project created by people investing their free time for the benefit of our community.
 
-This gives you the power to prioritize our work and support the project contributors. Moreover it'll guarantee the project will be updated and maintained in the long run.
+If you are using it please consider donating as this will guarantee the project will be updated and maintained in the long run.
 
-> Sponsors are listed in the contributors section at the bottom. If you want to be removed please contact me at: piotrek.witek@gmail.com
+Issues can be funded by anyone and the money will be transparently distributed to the contributors handling a particular issue.
 
-[![issuehunt-image](https://github.com/BoostIO/issuehunt-materials/blob/master/issuehunt-badge@1x.png?raw=true)](https://issuehunt.io/repos/76996763)
+[![Let's fund issues in this repository](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/repos/76996763)
 
 ---
 
