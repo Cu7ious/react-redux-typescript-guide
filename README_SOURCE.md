@@ -15,8 +15,8 @@ _"This guide is a **living compendium** documenting the most important patterns 
 - Reduce repetition and complexity of types with TypeScript focused [complementary libraries](#complementary-libraries)
 
 ### Complementary Libraries
-- [utility-types](https://github.com/piotrwitek/utility-types) - Utility Types for TypeScript (generic types complementing TypeScript build-in types - think `lodash` for types)  
-- [typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Typesafe generic utilities for "action-creators" in Redux / Flux Architecture
+- [utility-types](https://github.com/piotrwitek/utility-types) - Collection of generic types for TypeScript, complementing built-in mapped types and aliases - think lodash for reusable types.  
+- [typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Typesafe utilities for "action-creators" in Redux / Flux Architecture  
 
 ### Playground Project
 [![Build Status](https://semaphoreci.com/api/v1/piotrekwitek/react-redux-typescript-guide/branches/master/shields_badge.svg)](https://semaphoreci.com/piotrekwitek/react-redux-typescript-guide)
