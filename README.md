@@ -1,26 +1,22 @@
 ## React & Redux in TypeScript - Static Typing Guide
 
-_"This guide is a **living compendium** documenting the most important patterns and recipes on how to use **React** (and its Ecosystem) in a **functional style** with **TypeScript** and to make your code **completely type-safe** while focusing on **inferring the types from implementation** so it's a minimal effort to write and maintain types in the long run."_
+_"This guide is a **living compendium** documenting the most important patterns and recipes on how to use **React** (and its Ecosystem) in a **functional style** using **TypeScript**. It will help you make your code **completely type-safe** while focusing on **inferring the types from implementation** so there is less noise coming from excessive type annotations and it's easier to write and maintain correct types in the long run."_
 
 [![Join the chat at https://gitter.im/react-redux-typescript-guide/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/react-redux-typescript-guide/Lobby)  
-
 > #### _Found it useful? Want more updates?_ [**Show your support by giving a :star:**](https://github.com/piotrwitek/react-redux-typescript-guide/stargazers)  
 
-> _[The Mighty Tutorial](https://github.com/piotrwitek/typesafe-actions#behold-the-mighty-tutorial) for completely typesafe Redux Architecture_ :book:  
+:tada: _Now updated to be compatible with **TypeScript v3.1.6**_ :tada:  
 
-> _Reference implementation of Todo-App with `typesafe-actions`: https://codesandbox.io/s/github/piotrwitek/typesafe-actions-todo-app_ :computer:  
-
-> _Now compatible with **TypeScript v2.8.3** (rewritten using conditional types)_ :tada:  
+:computer: _Reference implementation of Todo-App with `typesafe-actions`: https://codesandbox.io/s/github/piotrwitek/typesafe-actions-todo-app_ :computer:  
 
 ### Goals
 - Complete type safety (with [`--strict`](https://www.typescriptlang.org/docs/handbook/compiler-options.html) flag) without losing type information downstream through all the layers of our application (e.g. no type assertions or hacking with `any` type)
 - Make type annotations concise by eliminating redundancy in types using advanced TypeScript Language features like **Type Inference** and **Control flow analysis**
 - Reduce repetition and complexity of types with TypeScript focused [complementary libraries](#complementary-libraries)
 
-### Complementary Projects
-- Typesafe Action Creators for Redux / Flux Architectures [typesafe-actions](https://github.com/piotrwitek/typesafe-actions)
-- Utility Types for TypeScript: [utility-types](https://github.com/piotrwitek/utility-types)
-- Reference implementation of Todo-App: [typesafe-actions-todo-app](https://github.com/piotrwitek/typesafe-actions-todo-app)
+### Complementary Libraries
+- [utility-types](https://github.com/piotrwitek/utility-types) - Utility Types for TypeScript (generic types complementing TypeScript build-in types - think `lodash` for types)  
+- [typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Typesafe generic utilities for "action-creators" in Redux / Flux Architecture
 
 ### Playground Project
 [![Build Status](https://semaphoreci.com/api/v1/piotrekwitek/react-redux-typescript-guide/branches/master/shields_badge.svg)](https://semaphoreci.com/piotrekwitek/react-redux-typescript-guide)
@@ -92,13 +88,7 @@ npm i -D @types/react @types/react-dom @types/react-redux
 "redux" - (types included with npm package)*  
 "react-redux" - `@types/react-redux`  
 
-> *NB: Guide is based on types from Redux v4.x.x (Beta). To make it work with Redux v3.x.x please refer to [this config](https://github.com/piotrwitek/react-redux-typescript-guide/blob/master/playground/tsconfig.json#L5))  
-
-### Recommended Libraries
-> Utility libraries **with focus on type-safety** providing a clean functional API that help handle common use-cases and reduce boilerplate  
-
-- ["utility-types"](https://github.com/piotrwitek/utility-types) - Utility Types for TypeScript (think `lodash` for types - generic types complementing TypeScript build-in types)  
-- ["typesafe-actions"](https://github.com/piotrwitek/typesafe-actions) - Typesafe generic helpers for Redux / Flux Architectures (in TypeScript)  
+> *NB: Guide is based on types for Redux >= v4.x.x. To make it work with Redux v3.x.x please refer to [this config](https://github.com/piotrwitek/react-redux-typescript-guide/blob/master/playground/tsconfig.json#L5))  
 
 [⇧ back to top](#table-of-contents)
 
